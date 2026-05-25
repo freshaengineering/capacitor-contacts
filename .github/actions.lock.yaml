@@ -1,0 +1,38 @@
+version: 1
+generated_at: 2026-05-25T13:43:00Z
+internal: []
+trusted:
+  - action: actions/checkout
+    refs:
+      - v5
+    occurrences:
+      v5:
+        .github/workflows/ci.yml:
+          - jobs.build.steps.[0].uses
+          - jobs.lint.steps.[0].uses
+  - action: actions/setup-java
+    refs:
+      - v5
+    occurrences:
+      v5:
+        .github/workflows/ci.yml:
+          - jobs.build.steps.[2].uses
+  - action: actions/setup-node
+    refs:
+      - v6
+    occurrences:
+      v6:
+        .github/workflows/ci.yml:
+          - jobs.build.steps.[1].uses
+          - jobs.lint.steps.[1].uses
+  - action: actions/upload-artifact
+    refs:
+      - v6
+    occurrences:
+      v6:
+        .github/workflows/ci.yml:
+          - jobs.build.steps.[7].uses
+external: []
+local: []
+docker: []
+dynamic: []
