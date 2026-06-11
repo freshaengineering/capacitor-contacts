@@ -1,20 +1,20 @@
 version: 1
-generated_at: 2026-05-25T13:43:00Z
+generated_at: 2026-06-11T15:37:16Z
 internal: []
 trusted:
   - action: actions/checkout
     refs:
-      - v5
+      - 93cb6efe18208431cddfb8368fd83d5badbf9bfd
     occurrences:
-      v5:
+      93cb6efe18208431cddfb8368fd83d5badbf9bfd:
         .github/workflows/ci.yml:
           - jobs.build.steps.[0].uses
           - jobs.lint.steps.[0].uses
   - action: actions/setup-java
     refs:
-      - v5
+      - be666c2fcd27ec809703dec50e508c2fdc7f6654
     occurrences:
-      v5:
+      be666c2fcd27ec809703dec50e508c2fdc7f6654:
         .github/workflows/ci.yml:
           - jobs.build.steps.[2].uses
   - action: actions/setup-node
