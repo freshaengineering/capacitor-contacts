@@ -1,5 +1,5 @@
 version: 1
-generated_at: 2026-06-11T15:37:16Z
+generated_at: 2026-06-15T13:14:31Z
 internal: []
 trusted:
   - action: actions/checkout
@@ -19,17 +19,17 @@ trusted:
           - jobs.build.steps.[2].uses
   - action: actions/setup-node
     refs:
-      - v6
+      - 48b55a011bda9f5d6aeb4c2d9c7362e8dae4041e
     occurrences:
-      v6:
+      48b55a011bda9f5d6aeb4c2d9c7362e8dae4041e:
         .github/workflows/ci.yml:
           - jobs.build.steps.[1].uses
           - jobs.lint.steps.[1].uses
   - action: actions/upload-artifact
     refs:
-      - v6
+      - b7c566a772e6b6bfb58ed0dc250532a479d7789f
     occurrences:
-      v6:
+      b7c566a772e6b6bfb58ed0dc250532a479d7789f:
         .github/workflows/ci.yml:
           - jobs.build.steps.[7].uses
 external: []
